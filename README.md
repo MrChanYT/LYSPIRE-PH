@@ -235,6 +235,7 @@
       padding:28px;box-shadow:var(--shadow-sm)
     }
     .info-card h3{margin:0 0 17px;font-size:19px}
+    .requirements-card{grid-column:1 / -1}
     .check-list{padding:0;margin:0;list-style:none;display:grid;gap:13px}
     .check-list li{display:flex;gap:10px;align-items:flex-start;color:#243149}
     .check{
@@ -468,9 +469,27 @@
               <li><span class="check">✓</span><span>At least 6 months of warehouse experience</span></li>
               <li><span class="check">✓</span><span>Basic English communication skills for working with foreign heads</span></li>
               <li><span class="check">✓</span><span>Available to start ASAP</span></li>
-              <li><span class="check">✓</span><span>Complete application requirements</span></li>
+              <li><span class="check">✓</span><span><strong>Complete application requirements are required before deployment.</strong></span></li>
               <li><span class="check">✓</span><span>Male applicants only, as stated in the current hiring brief</span></li>
             </ul>
+          </article>
+
+          <article class="info-card requirements-card">
+            <h3>Complete Requirements</h3>
+            <p style="margin:0 0 16px;color:var(--muted);font-size:14px">
+              Applicants must have the following documents/requirements ready:
+            </p>
+            <ul class="check-list">
+              <li><span class="check">✓</span><span><strong>SSS</strong> – SSS number / record</span></li>
+              <li><span class="check">✓</span><span><strong>PAG-IBIG</strong> – Pag-IBIG number / record</span></li>
+              <li><span class="check">✓</span><span><strong>PhilHealth</strong> – PhilHealth number / record</span></li>
+              <li><span class="check">✓</span><span><strong>TIN</strong> – Tax Identification Number</span></li>
+              <li><span class="check">✓</span><span><strong>Medical</strong> – Required medical examination / clearance</span></li>
+              <li><span class="check">✓</span><span><strong>Police Clearance / NBI Clearance</strong> – Valid clearance</span></li>
+            </ul>
+            <div class="notice" style="margin-top:18px">
+              <strong>Important:</strong> Please prepare and complete all listed requirements before the final hiring/deployment process.
+            </div>
           </article>
 
           <article class="info-card">
@@ -490,7 +509,7 @@
             </p>
 
             <div class="notice">
-              <strong>Tip:</strong> Keep your updated resume and active contact number ready before applying.
+              <strong>Tip:</strong> Keep your updated resume, active contact number, and all required documents ready before applying.
             </div>
           </article>
         </div>
