@@ -3,43 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="LYSPIRE PH is hiring Repacker / Warehouse Staff in Southwoods Industrial Park, Carmona, Cavite. Apply online through email or directly to Sir Erick.">
-  <meta name="theme-color" content="#0a1224">
-  <title>LYSPIRE PH | Hiring Repacker / Warehouse Staff</title>
+  <meta name="description" content="LYSPIRE PH urgent one-day hiring event for Warehouse Staff on Wednesday, September 23, 2026 at 11:00 AM. Venue: Block 5, Southwoods Industrial Park, Brgy. Mabuhay, Carmona, Cavite. 50 slots available. Walk-in applicants only.">
+  <meta name="theme-color" content="#1967ff">
+  <meta name="robots" content="index,follow">
+  <title>LYSPIRE PH | Urgent One-Day Hiring Event</title>
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="LYSPIRE PH | Hiring Repacker / Warehouse Staff">
-  <meta property="og:description" content="Now hiring Repacker / Warehouse Staff in Southwoods Industrial Park, Carmona, Cavite. Apply online.">
+  <meta property="og:title" content="LYSPIRE PH | Urgent One-Day Hiring Event">
+  <meta property="og:description" content="Warehouse Staff needed. One-day hiring event on Wednesday, September 23, 2026 at 11:00 AM. Only 50 slots available. Walk-in applicants only.">
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org/",
-    "@type": "JobPosting",
-    "title": "Repacker / Warehouse Staff",
-    "description": "Prepare, organize, repack, and handle items accurately while helping keep warehouse operations smooth and efficient. Requires at least 6 months of warehouse experience.",
-    "hiringOrganization": { "@type": "Organization", "name": "LYSPIRE PH" },
-    "jobLocation": {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "LYSPIRE PH Urgent One-Day Hiring Event",
+    "description": "Warehouse Staff hiring event. Wednesday, September 23, 2026 at 11:00 AM. Only 50 slots available. Walk-in applicants only. Applicants should bring an updated resume.",
+    "startDate": "2026-09-23T11:00:00+08:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "maximumAttendeeCapacity": 50,
+    "organizer": { "@type": "Organization", "name": "LYSPIRE PH" },
+    "location": {
       "@type": "Place",
+      "name": "LYSPIRE PH",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Block 5, Southwoods Industrial Park",
+        "streetAddress": "Block 5, Southwoods Industrial Park, Brgy. Mabuhay",
         "addressLocality": "Carmona",
         "addressRegion": "Cavite",
         "addressCountry": "PH"
       }
-    },
-    "employmentType": "FULL_TIME",
-    "datePosted": "2026-09-01",
-    "validThrough": "2026-12-31",
-    "applicationContact": { "@type": "ContactPoint", "email": "hr.marche01@gmail.com" }
+    }
   }
   </script>
 
   <!-- FIX: Prevent flash of wrong theme on load -->
   <script>
   (function(){
-    var t = localStorage.getItem('lyspire_theme');
-    var d = window.matchMedia('(prefers-color-scheme:dark)').matches;
+    var t = null;
+    try { t = localStorage.getItem('lyspire_theme'); } catch (_) {}
+    var d = false;
+    try { d = window.matchMedia('(prefers-color-scheme:dark)').matches; } catch (_) {}
     document.documentElement.setAttribute('data-theme', t || (d ? 'dark' : 'light'));
   })();
   </script>
@@ -222,6 +226,9 @@
     .hero-copy { max-width: 650px; color: var(--muted); font-size: 18px }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px }
     .hero-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; color: var(--muted); font-size: 13px }
+    .hero-quick-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:14px }
+    .quick-action { display:inline-flex; align-items:center; gap:7px; padding:9px 12px; border-radius:999px; background:var(--surface); border:1px solid var(--line); color:var(--ink); font-size:12px; font-weight:900; transition:transform .15s, border-color .15s, background .15s }
+    .quick-action:hover { transform:translateY(-1px); border-color:rgba(25,103,255,.35); background:var(--surface-2) }
 
     .hiring-card {
       position: relative; min-height: 460px; border-radius: 30px; overflow: hidden;
@@ -476,6 +483,8 @@
       transition: .18s ease;
     }
     .apply-option:hover { transform: translateY(-1px); border-color: rgba(25,103,255,.35); box-shadow: var(--shadow-sm) }
+    a.apply-option { color: inherit; text-decoration: none }
+    .apply-option:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px }
     .option-icon { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; font-size: 22px }
     .option-icon.ic-email { background: #edf3ff }
     .option-icon.ic-fb { background: #e7f0ff }
@@ -486,7 +495,9 @@
     .option-text { display: flex; flex-direction: column; gap: 3px }
     .option-title { font-weight: 900; font-size: 15px; color: var(--ink) }
     .option-copy { font-size: 12px; color: var(--muted) }
-    .modal-note { margin: 16px 0 0; padding: 12px 13px; border-radius: 13px; background: var(--surface-2); color: var(--muted); font-size: 12px }  /* FIX: was #f7f9fc */
+    .modal-note { margin: 16px 0 0; padding: 12px 13px; border-radius: 13px; background: var(--surface-2); color: var(--muted); font-size: 12px }
+    .modal-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px }
+    .modal-actions .btn { flex:1 1 180px }
 
     /* ── TOAST ────────────────────────────────────────────────────────── */
     .toast {
@@ -561,10 +572,50 @@
       .info-card, .role, .tracker-card { box-shadow: none; border: 1px solid #ddd }
     }
 
+
+    /* ── JOB FAIR EVENT UPDATES ───────────────────────────────────────── */
+    .event-banner {
+      margin-top: 26px; padding: 18px 20px; border-radius: 20px;
+      background: var(--surface); border: 1px solid rgba(25,103,255,.18);
+      box-shadow: var(--shadow-sm); display: grid; grid-template-columns: 1.25fr .75fr;
+      gap: 16px; align-items: center;
+    }
+    .event-banner .event-label { color: var(--blue); font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .14em }
+    .event-banner strong { display: block; margin-top: 5px; font-size: 18px; letter-spacing: -.03em }
+    .event-banner p { margin: 3px 0 0; color: var(--muted); font-size: 13px }
+    .event-countdown { text-align: center; padding: 13px 14px; border-radius: 16px; background: var(--surface-2); border: 1px solid var(--line) }
+    .event-countdown strong { margin: 0; color: var(--blue); font-size: 25px; line-height: 1.1 }
+    .event-countdown span { display: block; margin-top: 5px; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em }
+    .event-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px }
+    .event-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow-sm) }
+    .event-card h3 { margin: 0 0 16px; font-size: 20px }
+    .event-detail { display: grid; gap: 12px }
+    .event-detail-row { display: flex; gap: 12px; align-items: flex-start; padding: 13px 14px; border-radius: 15px; background: var(--surface-2) }
+    .event-detail-row .emoji { flex: none; font-size: 20px; line-height: 1 }
+    .event-detail-row strong { display: block; font-size: 14px }
+    .event-detail-row span { color: var(--muted); font-size: 13px }
+    .contact-list { display: grid; gap: 10px; margin-top: 16px }
+    .contact-link { display: flex; align-items: center; gap: 10px; padding: 13px 14px; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 800; font-size: 14px; transition: transform .15s, border-color .15s, background .15s }
+    .contact-link:hover { transform: translateY(-1px); border-color: rgba(25,103,255,.35); background: var(--surface-2) }
+    .slot-alert { margin-top: 16px; padding: 13px 15px; border-radius: 14px; background: rgba(220,38,38,.08); border: 1px solid rgba(220,38,38,.15); color: #a61b1b; font-size: 13px; font-weight: 800 }
+    [data-theme="dark"] .slot-alert { color: #ff8f8f; background: rgba(220,38,38,.12); border-color: rgba(220,38,38,.22) }
+    .offer-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 12px; margin-top: 16px }
+    .offer-item { display: flex; gap: 10px; align-items: flex-start; padding: 14px; border-radius: 15px; background: var(--surface-2) }
+    .offer-item span:first-child { flex: none; width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center; background: rgba(25,103,255,.10); color: var(--blue); font-size: 15px }
+    .offer-item strong { display: block; font-size: 14px }
+    .offer-item small { color: var(--muted); font-size: 12px }
+    .job-fair-strip { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px }
+    .job-fair-chip { display:inline-flex; align-items:center; gap:7px; padding:8px 11px; border-radius:999px; background:rgba(255,255,255,.10); border:1px solid rgba(255,255,255,.15); color:#fff; font-size:12px; font-weight:800 }
+    .contact-note { color: var(--muted); font-size: 13px; margin-top: 12px }
+    .event-actions { display:flex; flex-wrap:wrap; gap:10px; margin-top:16px }
+    .event-actions .btn { flex:1 1 180px }
+    .event-action-note { color:var(--muted); font-size:12px; margin:10px 0 0 }
+
     /* ── RESPONSIVE ───────────────────────────────────────────────────── */
     @media (max-width: 900px) {
       .hero-grid { grid-template-columns: 1fr }
       .info-grid { grid-template-columns: 1fr }
+      .event-grid { grid-template-columns: 1fr }
       .requirements-card { grid-column: unset }
       .section-head { align-items: flex-start; flex-direction: column }
       .steps { grid-template-columns: repeat(2,1fr) }
@@ -596,6 +647,11 @@
       .share-chip { display: none }
       .toast { bottom: 76px }
       .tracker-card { padding: 24px }
+      .event-banner { grid-template-columns: 1fr }
+      .event-banner strong { font-size: 16px }
+      .event-countdown strong { font-size: 22px }
+      .offer-grid { grid-template-columns: 1fr }
+      .event-actions .btn, .modal-actions .btn { flex-basis:100% }
       .req-item { padding: 13px 15px }
     }
   </style>
@@ -611,16 +667,13 @@
         <span>LYSPIRE PH</span>
       </a>
       <div class="nav-links">
-        <a href="#position" data-nav="position">Position</a>
+        <a href="#job-fair" data-nav="job-fair">Job Fair</a>
         <a href="#requirements" data-nav="requirements">Qualifications</a>
-        <a href="#tracker" data-nav="tracker">Checklist</a>
-        <a href="#process" data-nav="process">Process</a>
+        <a href="#offers" data-nav="offers">What We Offer</a>
+        <a href="#checklist" data-nav="checklist">Checklist</a>
         <a href="#faq" data-nav="faq">FAQ</a>
-        <!-- NEW: dark mode toggle -->
         <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle theme"></button>
-        <!-- FIX: Changed from <a href="#apply"> to <button data-open-modal>
-             so it opens the modal consistently with every other Apply Now CTA -->
-        <button class="nav-cta" type="button" data-open-modal aria-haspopup="dialog" aria-controls="applyModal">Apply Now ↗</button>
+        <button class="nav-cta" type="button" data-open-modal aria-haspopup="dialog" aria-controls="applyModal">Event Details ↗</button>
       </div>
     </div>
   </nav>
@@ -628,267 +681,148 @@
   <main id="top">
 
     <!-- ── HERO ──────────────────────────────────────────────────────── -->
-    <section class="hero" aria-label="Job opening overview">
+    <section class="hero" aria-label="LYSPIRE PH one-day hiring event">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">
-            <span class="dot" aria-hidden="true"></span>
-            Now hiring · Limited slots
-          </div>
-          <h1>Build your next step with <span>LYSPIRE PH.</span></h1>
-          <p class="hero-copy">
-            We are currently hiring <strong>Repacker / Warehouse Staff</strong> for our Southwoods Industrial Park operation in Carmona, Cavite.
-            Ready to apply? Submit your resume online in just a few steps.
-          </p>
+          <div class="eyebrow"><span class="dot" aria-hidden="true"></span>Urgent one-day hiring event · Walk-in only</div>
+          <h1>Warehouse Staff <span>Needed.</span></h1>
+          <p class="hero-copy">LYSPIRE PH is holding a <strong>one-day hiring event</strong> on <strong>Wednesday, September 23, 2026 at 11:00 AM</strong>. Only <strong>50 slots</strong> are available. Walk-in applicants only.</p>
           <div class="hero-actions">
-            <button class="btn btn-primary" type="button" data-open-modal aria-haspopup="dialog" aria-controls="applyModal">Apply Now ↗</button>
-            <a class="btn btn-secondary" href="#requirements">Check Qualifications ↓</a>
+            <a class="btn btn-primary" href="#job-fair">See Job Fair Details ↗</a>
+            <a class="btn btn-secondary" href="#requirements">View Qualifications ↓</a>
           </div>
-          <div class="hero-note">
-            <span aria-hidden="true">⚡</span>
-            <span>Hiring ASAP. Please review the qualifications and application process before sending your resume.</span>
+          <div class="hero-note"><span aria-hidden="true">📄</span><span>Please bring your <strong>updated resume</strong> to the hiring event.</span></div>
+          <div class="hero-quick-actions" aria-label="Quick event actions">
+            <a class="quick-action" href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer">📍 Google Maps</a>
+            <a class="quick-action" href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer">💬 Sir Erick on Facebook</a>
+          </div>
+          <div class="event-banner">
+            <div>
+              <div class="event-label">Wednesday · September 23 · 2026</div>
+              <strong>11:00 AM · Southwoods Industrial Park</strong>
+              <p>Block 5, Brgy. Mabuhay, Carmona, Cavite</p>
+            </div>
+            <div class="event-countdown" aria-live="polite"><strong id="eventCountdown">–</strong><span id="eventCountdownLabel">until the hiring event</span></div>
           </div>
         </div>
 
-        <div class="hiring-card" aria-label="LYSPIRE PH hiring summary">
+        <div class="hiring-card" aria-label="LYSPIRE PH hiring event summary">
           <div class="grid-lines" aria-hidden="true"></div>
           <div class="hiring-content">
             <div>
-              <div class="card-top">
-                <span class="mini-label">Hiring brief / 2026</span>
-                <span class="open-pill" aria-label="Position is open">● OPEN</span>
-              </div>
+              <div class="card-top"><span class="mini-label">One-day hiring event / 2026</span><span class="open-pill" aria-label="Event is scheduled">● SEPT 23</span></div>
               <div class="job-icon" aria-hidden="true">📦</div>
-              <div class="mini-label">Position available</div>
-              <div class="job-title">Repacker / Warehouse Staff</div>
-              <div class="job-location">Southwoods Industrial Park · Carmona, Cavite</div>
+              <div class="mini-label">Position needed</div>
+              <div class="job-title">Warehouse Staff</div>
+              <div class="job-location">Block 5, Southwoods Industrial Park · Brgy. Mabuhay, Carmona, Cavite</div>
             </div>
             <div class="stat-strip">
-              <div class="stat">
-                <strong>60</strong>
-                <span>Open warehouse slots</span>
-              </div>
-              <!-- NEW: live deadline countdown -->
-              <div class="stat">
-                <strong id="daysLeft">–</strong>
-                <span>Days left to apply</span>
-              </div>
+              <div class="stat"><strong>50</strong><span>Slots available</span></div>
+              <div class="stat"><strong id="eventCardTime">11:00</strong><span>AM · walk-in applicants only</span></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── POSITION ───────────────────────────────────────────────────── -->
-    <section class="section" id="position" aria-labelledby="h-position">
+    <!-- ── JOB FAIR DETAILS ─────────────────────────────────────────────── -->
+    <section class="section" id="job-fair" aria-labelledby="h-job-fair">
       <div class="wrap">
         <div class="section-head reveal">
-          <div>
-            <div class="kicker">Position available</div>
-            <h2 id="h-position">One clear opportunity.</h2>
-          </div>
-          <p class="intro">
-            The current opening is focused on Repacker / Warehouse Staff. Applicants should be ready to work efficiently, follow instructions, and support daily warehouse operations.
-          </p>
+          <div><div class="kicker">One-day hiring event</div><h2 id="h-job-fair">Be there on September 23.</h2></div>
+          <p class="intro">This hiring event is for applicants interested in the LYSPIRE PH Warehouse Staff opening. The poster lists 50 available slots and says the event is for walk-in applicants only.</p>
         </div>
-        <article class="role reveal">
-          <div class="role-icon" aria-hidden="true">📦</div>
-          <div>
-            <h3>Repacker / Warehouse Staff</h3>
-            <p>Prepare, organize, repack, and handle items accurately while helping keep warehouse operations smooth and efficient.</p>
-            <span class="role-badge">OPEN NOW</span>
-          </div>
-        </article>
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <h3>Event details</h3>
+            <div class="event-detail">
+              <div class="event-detail-row"><span class="emoji" aria-hidden="true">📅</span><div><strong>Wednesday, September 23, 2026</strong><span>One-day hiring event</span></div></div>
+              <div class="event-detail-row"><span class="emoji" aria-hidden="true">⏰</span><div><strong>11:00 AM</strong><span>Hiring event start time</span></div></div>
+              <div class="event-detail-row"><span class="emoji" aria-hidden="true">📍</span><div><strong>Block 5, Southwoods Industrial Park</strong><span>Brgy. Mabuhay, Carmona, Cavite</span></div></div>
+              <div class="event-detail-row"><span class="emoji" aria-hidden="true">🚶</span><div><strong>Walk-in applicants only</strong><span>The poster does not list an appointment requirement.</span></div></div>
+            </div>
+            <div class="slot-alert">⚠️ Only 50 slots are available.</div>
+            <div class="event-actions" aria-label="Venue and online contact actions">
+              <a class="btn btn-primary" href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+              <a class="btn btn-secondary" href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer">💬 Message Sir Erick</a>
+            </div>
+            <p class="event-action-note">The poster says this is a walk-in event. Use Sir Erick’s Facebook for inquiries or to ask about online submission.</p>
+          </article>
+          <article class="event-card reveal reveal-d1">
+            <h3>What to bring & contact</h3>
+            <div class="event-detail-row"><span class="emoji" aria-hidden="true">📄</span><div><strong>Updated resume</strong><span>Please bring your updated resume to the event.</span></div></div>
+            <div class="contact-list" aria-label="Hiring event contacts">
+              <a class="contact-link" href="tel:+639369778034">📞 0936 977 8034</a>
+              <a class="contact-link" href="tel:+639913577617">📞 0991 357 7617</a>
+              <a class="contact-link" href="mailto:hr.marche01@gmail.com">✉️ hr.marche01@gmail.com</a>
+              <a class="contact-link" href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer">💬 Facebook · Sir Erick</a>
+              <a class="contact-link" href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer">📍 Open venue in Google Maps</a>
+            </div>
+            <p class="contact-note">For online inquiries or to talk with Sir Erick, use Facebook. The hiring poster itself specifies walk-in applicants only.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ── REQUIREMENTS ───────────────────────────────────────────────── -->
+    <!-- ── REQUIREMENTS / OFFERS ───────────────────────────────────────── -->
     <section class="section" id="requirements" style="padding-top:0" aria-labelledby="h-reqs">
       <div class="wrap">
-        <!-- FIX: Reordered cards so "Who can apply?" and "Work location" sit side-by-side
-             in row 1, and "Complete Requirements" spans full width in row 2.
-             Previously "Work location" was isolated in row 3 with an empty column beside it. -->
-        <div class="info-grid">
-
-          <article class="info-card reveal">
-            <h3 id="h-reqs">Who can apply?</h3>
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <h3 id="h-reqs">Qualifications</h3>
             <ul class="check-list">
-              <li><span class="check" aria-hidden="true">✓</span><span>18–35 years old</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span>At least 6 months of warehouse experience</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span>Basic English communication skills for working with foreign heads</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span>Available to start ASAP</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>Complete application requirements required before deployment.</strong></span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span>Male applicants only, as stated in the current hiring brief</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span>At least High School Graduate / SHS Grad</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span>Physically fit</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span>Must have at least 1 year experience in warehouse</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span>Must be punctual and reliable</span></li>
+              <li><span class="check" aria-hidden="true">✓</span><span>Can start ASAP</span></li>
             </ul>
           </article>
-
-          <article class="info-card reveal reveal-d1">
-            <h3>Work location</h3>
-            <p style="font-size:22px;font-weight:900;letter-spacing:-.03em;margin:0">LYSPIRE PH</p>
-            <div class="location">
-              <span style="font-size:21px" aria-hidden="true">📍</span>
-              <div>
-                <strong>Block 5, Southwoods Industrial Park</strong><br>
-                Carmona, Cavite
-              </div>
-            </div>
-            <p style="margin:17px 0 0;color:var(--muted);font-size:14px">
-              No walk-ins. The recruitment process is handled online from initial screening through the final interview.
-            </p>
-            <div class="notice" role="note">
-              <strong>Tip:</strong> Keep your updated resume, active contact number, and all required documents ready before applying.
+          <article class="event-card reveal reveal-d1" id="offers">
+            <h3>What we offer</h3>
+            <div class="offer-grid">
+              <div class="offer-item"><span aria-hidden="true">💼</span><div><strong>Competitive Salary</strong></div></div>
+              <div class="offer-item"><span aria-hidden="true">🛡️</span><div><strong>Benefits</strong><small>SSS, PhilHealth, Pag-IBIG</small></div></div>
+              <div class="offer-item"><span aria-hidden="true">📈</span><div><strong>Career Growth</strong></div></div>
+              <div class="offer-item"><span aria-hidden="true">✅</span><div><strong>Safe Work Environment</strong></div></div>
             </div>
           </article>
-
-          <article class="info-card requirements-card reveal">
-            <h3>Complete Requirements</h3>
-            <p style="margin:0 0 16px;color:var(--muted);font-size:14px">
-              Applicants must have the following documents ready before the deployment process:
-            </p>
-            <ul class="check-list">
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>SSS</strong> – SSS number / record</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>PAG-IBIG</strong> – Pag-IBIG number / record</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>PhilHealth</strong> – PhilHealth number / record</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>TIN</strong> – Tax Identification Number</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>Medical</strong> – Required medical examination / clearance</span></li>
-              <li><span class="check" aria-hidden="true">✓</span><span><strong>Police Clearance / NBI Clearance</strong> – Valid clearance</span></li>
-            </ul>
-            <div class="notice" role="note" style="margin-top:18px">
-              <strong>Important:</strong> Prepare and complete all listed requirements before the final hiring/deployment process.
-            </div>
-          </article>
-
         </div>
       </div>
     </section>
 
-    <!-- ── NEW: REQUIREMENTS TRACKER ─────────────────────────────────── -->
-    <section class="tracker" id="tracker" aria-labelledby="h-tracker">
+    <!-- ── JOB FAIR CHECKLIST ───────────────────────────────────────────── -->
+    <section class="tracker" id="checklist" aria-labelledby="h-tracker">
       <div class="wrap">
         <div class="tracker-card reveal" id="trackerCard">
           <div class="tracker-top">
-            <div>
-              <div class="kicker">Your readiness</div>
-              <h2 class="tracker-title" id="h-tracker">Track your requirements.</h2>
-              <p class="tracker-sub">Check off each document as you gather it. Your progress saves automatically in your browser.</p>
-            </div>
-            <div class="tracker-badge" id="trackerBadge" aria-live="polite" aria-atomic="true">
-              <strong id="trackerCount">0 / 6</strong>
-              <span>ready</span>
-            </div>
+            <div><div class="kicker">Before you go</div><h2 class="tracker-title" id="h-tracker">Job fair checklist.</h2><p class="tracker-sub">Use this simple checklist to make sure you have reviewed the key details shown on the hiring poster.</p></div>
+            <div class="tracker-badge" id="trackerBadge" aria-live="polite" aria-atomic="true"><strong id="trackerCount">0 / 4</strong><span>ready</span></div>
           </div>
-
-          <div class="tracker-bar-wrap">
-            <div class="tracker-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="trackerBar" aria-label="Requirements completion">
-              <div class="tracker-fill" id="trackerFill"></div>
-            </div>
-            <span class="tracker-pct" id="trackerPct" aria-hidden="true">0%</span>
-          </div>
-
-          <ul class="req-list" aria-label="Document checklist">
-            <li>
-              <label class="req-item">
-                <input type="checkbox" class="req-checkbox" data-req="sss" aria-label="SSS – Social Security System number or record">
-                <span class="req-check" aria-hidden="true"></span>
-                <span class="req-info">
-                  <strong>SSS</strong>
-                  <span>Social Security System number / record</span>
-                </span>
-              </label>
-            </li>
-            <li>
-              <label class="req-item">
-                <input type="checkbox" class="req-checkbox" data-req="pagibig" aria-label="PAG-IBIG – Home Development Mutual Fund number or record">
-                <span class="req-check" aria-hidden="true"></span>
-                <span class="req-info">
-                  <strong>PAG-IBIG</strong>
-                  <span>Home Development Mutual Fund number / record</span>
-                </span>
-              </label>
-            </li>
-            <li>
-              <label class="req-item">
-                <input type="checkbox" class="req-checkbox" data-req="philhealth" aria-label="PhilHealth – Philippine Health Insurance number or record">
-                <span class="req-check" aria-hidden="true"></span>
-                <span class="req-info">
-                  <strong>PhilHealth</strong>
-                  <span>Philippine Health Insurance number / record</span>
-                </span>
-              </label>
-            </li>
-            <li>
-              <label class="req-item">
-                <input type="checkbox" class="req-checkbox" data-req="tin" aria-label="TIN – Tax Identification Number from BIR">
-                <span class="req-check" aria-hidden="true"></span>
-                <span class="req-info">
-                  <strong>TIN</strong>
-                  <span>Tax Identification Number from BIR</span>
-                </span>
-              </label>
-            </li>
-            <li>
-              <label class="req-item">
-                <input type="checkbox" class="req-checkbox" data-req="medical" aria-label="Medical Clearance – Required medical examination">
-                <span class="req-check" aria-hidden="true"></span>
-                <span class="req-info">
-                  <strong>Medical Clearance</strong>
-                  <span>Required medical examination from an accredited clinic</span>
-                </span>
-              </label>
-            </li>
-            <li>
-              <label class="req-item">
-                <input type="checkbox" class="req-checkbox" data-req="clearance" aria-label="Police or NBI Clearance – Valid clearance document">
-                <span class="req-check" aria-hidden="true"></span>
-                <span class="req-info">
-                  <strong>Police / NBI Clearance</strong>
-                  <span>Valid clearance from your local police station or NBI</span>
-                </span>
-              </label>
-            </li>
+          <div class="tracker-bar-wrap"><div class="tracker-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="trackerBar" aria-label="Job fair checklist completion"><div class="tracker-fill" id="trackerFill"></div></div><span class="tracker-pct" id="trackerPct" aria-hidden="true">0%</span></div>
+          <ul class="req-list" aria-label="Job fair checklist">
+            <li><label class="req-item"><input type="checkbox" class="req-checkbox" data-req="resume" aria-label="Bring an updated resume"><span class="req-check" aria-hidden="true"></span><span class="req-info"><strong>Bring your updated resume</strong><span>Listed on the hiring poster.</span></span></label></li>
+            <li><label class="req-item"><input type="checkbox" class="req-checkbox" data-req="date" aria-label="Confirm Wednesday September 23 2026"><span class="req-check" aria-hidden="true"></span><span class="req-info"><strong>Confirm the date</strong><span>Wednesday, September 23, 2026.</span></span></label></li>
+            <li><label class="req-item"><input type="checkbox" class="req-checkbox" data-req="time" aria-label="Confirm the 11 AM start time"><span class="req-check" aria-hidden="true"></span><span class="req-info"><strong>Confirm the time</strong><span>11:00 AM.</span></span></label></li>
+            <li><label class="req-item"><input type="checkbox" class="req-checkbox" data-req="venue" aria-label="Confirm the Southwoods Industrial Park venue"><span class="req-check" aria-hidden="true"></span><span class="req-info"><strong>Confirm the venue</strong><span>Block 5, Southwoods Industrial Park, Brgy. Mabuhay, Carmona, Cavite.</span></span></label></li>
           </ul>
-
-          <div class="tracker-footer">
-            <p class="tracker-note" id="trackerNote" aria-live="polite">Start by gathering your government IDs — SSS, PAG-IBIG, PhilHealth, and TIN.</p>
-            <button class="btn btn-ghost tracker-reset" type="button" id="clearTracker">Reset checklist</button>
-          </div>
+          <div class="tracker-footer"><p class="tracker-note" id="trackerNote" aria-live="polite">Start with your updated resume.</p><button class="btn btn-ghost tracker-reset" type="button" id="clearTracker">Reset checklist</button></div>
         </div>
       </div>
     </section>
 
-    <!-- ── PROCESS ────────────────────────────────────────────────────── -->
+    <!-- ── HOW TO ATTEND ───────────────────────────────────────────────── -->
     <section class="section process" id="process" aria-labelledby="h-process">
       <div class="wrap">
         <div class="section-head reveal">
-          <div>
-            <div class="kicker">Application process</div>
-            <h2 id="h-process">Simple from start to finish.</h2>
-          </div>
-          <p class="intro">
-            Choose how you want to submit your application, then wait for the recruitment team to contact you for the next step.
-          </p>
+          <div><div class="kicker">How to attend</div><h2 id="h-process">Get ready for the hiring day.</h2></div>
+          <p class="intro">The poster identifies this as a walk-in hiring event. Bring the requested item and go to the listed venue at the stated time. For online questions, message Sir Erick on Facebook.</p>
         </div>
-        <ol class="steps" aria-label="Application steps">
-          <li class="step reveal">
-            <div class="step-num" aria-label="Step 1">01</div>
-            <h3>Submit your resume</h3>
-            <p>Choose email or direct contact with Sir Erick from the Apply Now button.</p>
-          </li>
-          <li class="step reveal reveal-d1">
-            <div class="step-num" aria-label="Step 2">02</div>
-            <h3>Initial screening</h3>
-            <p>The first screening is conducted through a phone call.</p>
-          </li>
-          <li class="step reveal reveal-d2">
-            <div class="step-num" aria-label="Step 3">03</div>
-            <h3>Final interview</h3>
-            <p>Qualified applicants proceed to a final interview via Google Meet.</p>
-          </li>
-          <li class="step reveal reveal-d3">
-            <div class="step-num" aria-label="Step 4">04</div>
-            <h3>Onboarding</h3>
-            <p>Complete your documents and requirements, then prepare for your start date.</p>
-          </li>
+        <ol class="steps" aria-label="Job fair attendance steps">
+          <li class="step reveal"><div class="step-num" aria-label="Step 1">01</div><h3>Prepare your resume</h3><p>Bring your updated resume, as requested on the poster.</p></li>
+          <li class="step reveal reveal-d1"><div class="step-num" aria-label="Step 2">02</div><h3>Go to the venue</h3><p>Head to Block 5, Southwoods Industrial Park, Brgy. Mabuhay, Carmona, Cavite.</p></li>
+          <li class="step reveal reveal-d2"><div class="step-num" aria-label="Step 3">03</div><h3>Arrive for 11:00 AM</h3><p>The one-day hiring event is scheduled for Wednesday, September 23, 2026 at 11:00 AM.</p></li>
+          <li class="step reveal reveal-d3"><div class="step-num" aria-label="Step 4">04</div><h3>Walk in and inquire</h3><p>Walk-in applicants only. Ask the LYSPIRE PH hiring team about the Warehouse Staff opening.</p></li>
         </ol>
       </div>
     </section>
@@ -896,109 +830,36 @@
     <!-- ── FAQ ───────────────────────────────────────────────────────── -->
     <section class="faq" id="faq" aria-labelledby="h-faq">
       <div class="wrap">
-        <div class="section-head reveal">
-          <div>
-            <div class="kicker">Frequently asked</div>
-            <h2 id="h-faq">Common questions.</h2>
-          </div>
-          <p class="intro">Everything you need to know before you apply — answered plainly.</p>
-        </div>
-
+        <div class="section-head reveal"><div><div class="kicker">Frequently asked</div><h2 id="h-faq">Job fair questions.</h2></div><p class="intro">The answers below reflect the details shown on the September 23 hiring poster.</p></div>
         <div class="faq-list">
-          <!-- FIX: Added id="faqBtn1…" to buttons and aria-labelledby="faqBtn1…" to panels.
-               role="region" requires an accessible name via aria-labelledby. -->
-          <div class="faq-item reveal">
-            <button class="faq-q" id="faqBtn1" aria-expanded="false" aria-controls="fa1">
-              Is there an age limit?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a" id="fa1" role="region" aria-labelledby="faqBtn1">
-              Yes. The current hiring brief requires applicants to be between <strong>18 and 35 years old</strong>. Applicants outside this range will not be considered for this batch.
-            </div>
-          </div>
-
-          <div class="faq-item reveal reveal-d1">
-            <button class="faq-q" id="faqBtn2" aria-expanded="false" aria-controls="fa2">
-              Can I apply without warehouse experience?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a" id="fa2" role="region" aria-labelledby="faqBtn2">
-              The position requires <strong>at least 6 months</strong> of warehouse experience. Applicants without prior warehouse work may not qualify for this particular role.
-            </div>
-          </div>
-
-          <div class="faq-item reveal reveal-d2">
-            <button class="faq-q" id="faqBtn3" aria-expanded="false" aria-controls="fa3">
-              Is walk-in application allowed?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a" id="fa3" role="region" aria-labelledby="faqBtn3">
-              No. The entire recruitment process — from initial screening to the final interview — is conducted <strong>online</strong>. Walk-ins are not entertained at the site.
-            </div>
-          </div>
-
-          <div class="faq-item reveal">
-            <button class="faq-q" id="faqBtn4" aria-expanded="false" aria-controls="fa4">
-              When do I need to prepare the requirements?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a" id="fa4" role="region" aria-labelledby="faqBtn4">
-              All requirements (SSS, Pag-IBIG, PhilHealth, TIN, medical clearance, and police/NBI clearance) must be complete <strong>before the final deployment</strong>. You don't need them at the application stage, but start gathering them early to avoid delays.
-            </div>
-          </div>
-
-          <div class="faq-item reveal reveal-d1">
-            <button class="faq-q" id="faqBtn5" aria-expanded="false" aria-controls="fa5">
-              How long does the process take?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a" id="fa5" role="region" aria-labelledby="faqBtn5">
-              After you submit your resume, the team will reach out for an initial phone screening. Qualified candidates then proceed to a Google Meet interview. The timeline depends on the number of applicants, but the process is generally straightforward once you have all your documents ready.
-            </div>
-          </div>
-
-          <div class="faq-item reveal reveal-d2">
-            <button class="faq-q" id="faqBtn6" aria-expanded="false" aria-controls="fa6">
-              Is this open to female applicants?
-              <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a" id="fa6" role="region" aria-labelledby="faqBtn6">
-              The current hiring brief specifies <strong>male applicants only</strong> for this batch.
-            </div>
-          </div>
+          <div class="faq-item reveal"><button class="faq-q" id="faqBtn1" aria-expanded="false" aria-controls="fa1">When is the hiring event?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" id="fa1" role="region" aria-labelledby="faqBtn1">The event is on <strong>Wednesday, September 23, 2026 at 11:00 AM</strong>.</div></div>
+          <div class="faq-item reveal reveal-d1"><button class="faq-q" id="faqBtn2" aria-expanded="false" aria-controls="fa2">Where is the event?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" id="fa2" role="region" aria-labelledby="faqBtn2">The venue is <strong>Block 5, Southwoods Industrial Park, Brgy. Mabuhay, Carmona, Cavite</strong>.</div></div>
+          <div class="faq-item reveal reveal-d2"><button class="faq-q" id="faqBtn3" aria-expanded="false" aria-controls="fa3">Can I walk in?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" id="fa3" role="region" aria-labelledby="faqBtn3">Yes. The poster specifically says <strong>walk-in applicants only</strong>.</div></div>
+          <div class="faq-item reveal"><button class="faq-q" id="faqBtn4" aria-expanded="false" aria-controls="fa4">What qualifications are listed?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" id="fa4" role="region" aria-labelledby="faqBtn4">Applicants should be at least <strong>High School Graduate / SHS Grad</strong>, physically fit, have at least <strong>1 year of warehouse experience</strong>, be punctual and reliable, and be able to start ASAP.</div></div>
+          <div class="faq-item reveal reveal-d1"><button class="faq-q" id="faqBtn5" aria-expanded="false" aria-controls="fa5">What should I bring?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" id="fa5" role="region" aria-labelledby="faqBtn5">Please bring your <strong>updated resume</strong>.</div></div>
+          <div class="faq-item reveal reveal-d2"><button class="faq-q" id="faqBtn6" aria-expanded="false" aria-controls="fa6">What does LYSPIRE PH offer?<span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a" id="fa6" role="region" aria-labelledby="faqBtn6">The poster lists <strong>competitive salary</strong>, <strong>benefits (SSS, PhilHealth, Pag-IBIG)</strong>, <strong>career growth</strong>, and a <strong>safe work environment</strong>.</div></div>
         </div>
       </div>
     </section>
 
-    <!-- ── APPLY CTA ──────────────────────────────────────────────────── -->
+    <!-- ── APPLY / CONTACT CTA ─────────────────────────────────────────── -->
     <section class="apply" id="apply" aria-labelledby="h-apply">
       <div class="wrap">
         <div class="apply-card reveal">
           <div class="apply-content">
-            <div class="kicker" style="color:#bcefff">Ready to apply?</div>
-            <h2 id="h-apply">Start your application today.</h2>
-            <p>
-              Click Apply Now and choose the method most convenient for you:
-              send your resume by email or contact Sir Erick directly.
-            </p>
+            <div class="kicker" style="color:#bcefff">September 23 · 11:00 AM</div>
+            <h2 id="h-apply">Ready for the hiring event?</h2>
+            <p>Bring your updated resume and attend the LYSPIRE PH one-day hiring event at Block 5, Southwoods Industrial Park, Brgy. Mabuhay, Carmona, Cavite. Walk-in applicants only.</p>
             <div class="apply-actions">
-              <button class="btn btn-light" type="button" data-open-modal aria-haspopup="dialog" aria-controls="applyModal">Choose how to apply ↗</button>
-              <a class="btn btn-ghost" href="#requirements">Review requirements</a>
+              <a class="btn btn-light" href="#job-fair">View event details ↗</a>
+              <a class="btn btn-light" href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer">📍 Get Directions</a>
+              <a class="btn btn-light" href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer">💬 Message Sir Erick</a>
+              <a class="btn btn-light" href="tel:+639369778034">Call 0936 977 8034</a>
             </div>
+            <div class="job-fair-strip"><span class="job-fair-chip">📦 Warehouse Staff</span><span class="job-fair-chip">🎟️ Only 50 slots</span><span class="job-fair-chip">🚶 Walk-in only</span><span class="job-fair-chip">📄 Bring updated resume</span></div>
             <div class="apply-chips">
-              <button class="email-chip" type="button" id="copyEmailBtn" aria-label="Copy HR email address to clipboard">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
-                  <rect x="2" y="4" width="12" height="9" rx="1.5"/><path d="M2 6.5l6 3.5 6-3.5"/>
-                </svg>
-                hr.marche01@gmail.com
-              </button>
-              <button class="share-chip" type="button" id="shareBtn" aria-label="Share this job posting">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                  <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
-                  <line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/>
-                </svg>
-                Share this job
-              </button>
+              <button class="email-chip" type="button" id="copyEmailBtn" aria-label="Copy HR email address to clipboard"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="4" width="12" height="9" rx="1.5"/><path d="M2 6.5l6 3.5 6-3.5"/></svg>hr.marche01@gmail.com</button>
+              <button class="share-chip" type="button" id="shareBtn" aria-label="Share this hiring event"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/><line x1="15.4" y1="6.5" x2="8.6" y2="10.5"/></svg>Share this hiring event</button>
             </div>
           </div>
         </div>
@@ -1009,29 +870,19 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <div>
-        <strong>LYSPIRE PH</strong> · Repacker / Warehouse Recruitment<br>
-        <span style="font-size:12px;margin-top:3px;display:inline-block">Southwoods Industrial Park · Carmona, Cavite</span>
-      </div>
-      <nav class="footer-links" aria-label="Footer navigation">
-        <a href="#position">Position</a>
-        <a href="#requirements">Requirements</a>
-        <a href="#tracker">Checklist</a>
-        <a href="#process">Process</a>
-        <a href="#faq">FAQ</a>
-        <a href="#apply">Apply</a>
-      </nav>
+      <div><strong>LYSPIRE PH</strong> · Warehouse Staff Hiring Event<br><span style="font-size:12px;margin-top:3px;display:inline-block">Sept. 23, 2026 · 11:00 AM · Southwoods Industrial Park · Carmona, Cavite</span></div>
+      <nav class="footer-links" aria-label="Footer navigation"><a href="#job-fair">Job Fair</a><a href="#requirements">Qualifications</a><a href="#offers">What We Offer</a><a href="#checklist">Checklist</a><a href="#faq">FAQ</a><a href="#apply">Contact</a><a href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer">Maps</a><a href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer">Facebook</a></nav>
     </div>
   </footer>
 
   <!-- FAB — mobile floating apply button -->
   <button class="fab" id="fab" type="button" data-open-modal
     aria-haspopup="dialog" aria-controls="applyModal" aria-hidden="true" tabindex="-1">
-    Apply Now ↗
+    Event Details ↗
   </button>
 
   <!-- NEW: Back to top button -->
-  <button class="back-top" id="backTop" aria-label="Scroll to top" title="Scroll to top">
+  <button class="back-top" id="backTop" type="button" aria-label="Scroll to top" title="Scroll to top">
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <path d="M8 12V4M4 8l4-4 4 4"/>
     </svg>
@@ -1040,51 +891,16 @@
   <!-- Toast notification -->
   <div class="toast" id="toast" role="status" aria-live="polite" aria-hidden="true"></div>
 
-  <!-- Application modal -->
-  <div class="modal" id="applyModal" role="dialog" aria-modal="true"
-       aria-hidden="true" aria-labelledby="modalTitle">
+  <!-- Job fair information modal -->
+  <div class="modal" id="applyModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
     <div class="modal-card" tabindex="-1">
-      <div class="modal-head">
-        <div>
-          <h3 id="modalTitle">How would you like to apply?</h3>
-          <p class="modal-sub">Choose one of the methods below to send your resume.</p>
-        </div>
-        <button class="close" type="button" aria-label="Close modal" data-close-modal>✕</button>
-      </div>
-
-      <a class="apply-option"
-         href="mailto:hr.marche01@gmail.com?subject=Application%20-%20Repacker%20%2F%20Warehouse%20Staff%20-%20LYSPIRE%20PH"
-         data-close-modal>
-        <span class="option-icon ic-email" aria-hidden="true">✉️</span>
-        <span class="option-text">
-          <span class="option-title">Send Resume via Email</span>
-          <span class="option-copy">Opens your email app — attach your updated resume.</span>
-        </span>
-      </a>
-
-      <a class="apply-option"
-         href="https://www.facebook.com/erick.borlaza"
-         target="_blank" rel="noopener noreferrer" data-close-modal>
-        <span class="option-icon ic-fb" aria-hidden="true">👤</span>
-        <span class="option-text">
-          <span class="option-title">Apply via Facebook</span>
-          <span class="option-copy">Go to Sir Erick's profile and send your resume.</span>
-        </span>
-      </a>
-
-      <a class="apply-option"
-         href="https://m.me/erick.borlaza"
-         target="_blank" rel="noopener noreferrer" data-close-modal>
-        <span class="option-icon ic-msg" aria-hidden="true">💬</span>
-        <span class="option-text">
-          <span class="option-title">Message via Messenger</span>
-          <span class="option-copy">Send a direct message to Sir Erick on Facebook Messenger.</span>
-        </span>
-      </a>
-
-      <div class="modal-note">
-        Make sure your resume is updated and includes your active phone number before reaching out.
-      </div>
+      <div class="modal-head"><div><h3 id="modalTitle">LYSPIRE PH Hiring Event</h3><p class="modal-sub">Everything important from the September 23 poster.</p></div><button class="close" type="button" aria-label="Close modal" data-close-modal>✕</button></div>
+      <div class="apply-option" style="cursor:default"><span class="option-icon ic-email" aria-hidden="true">📅</span><span class="option-text"><span class="option-title">Wednesday, September 23, 2026 · 11:00 AM</span><span class="option-copy">Urgent one-day hiring event · Warehouse Staff</span></span></div>
+      <a class="apply-option" href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer"><span class="option-icon ic-fb" aria-hidden="true">📍</span><span class="option-text"><span class="option-title">Open venue in Google Maps</span><span class="option-copy">Block 5, Southwoods Industrial Park · Brgy. Mabuhay, Carmona, Cavite</span></span></a>
+      <a class="apply-option" href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer"><span class="option-icon ic-msg" aria-hidden="true">💬</span><span class="option-text"><span class="option-title">Message Sir Erick on Facebook</span><span class="option-copy">For inquiries or to ask about online submission.</span></span></a>
+      <div class="apply-option" style="cursor:default"><span class="option-icon ic-msg" aria-hidden="true">🎟️</span><span class="option-text"><span class="option-title">Only 50 slots · Walk-in applicants only</span><span class="option-copy">Please bring your updated resume.</span></span></div>
+      <div class="modal-note">Inquiries: <a href="tel:+639369778034"><strong>0936 977 8034</strong></a> · <a href="tel:+639913577617"><strong>0991 357 7617</strong></a> · <a href="mailto:hr.marche01@gmail.com"><strong>hr.marche01@gmail.com</strong></a></div>
+      <div class="modal-actions"><a class="btn btn-primary" href="https://maps.app.goo.gl/oXGHBXU9vLuHoPgZ6" target="_blank" rel="noopener noreferrer">📍 Get Directions</a><a class="btn btn-secondary" href="https://www.facebook.com/erick.borlaza" target="_blank" rel="noopener noreferrer">💬 Message Sir Erick</a></div>
     </div>
   </div>
 
@@ -1094,47 +910,59 @@
     const modalCard   = modal.querySelector('.modal-card');
     const openBtns    = document.querySelectorAll('[data-open-modal]');
     const closeBtns   = document.querySelectorAll('[data-close-modal]');
-    // FIX: added #fab and #backTop to inert group while modal is open
     const bgLandmarks = document.querySelectorAll('body > nav, body > main, body > footer, #fab, #backTop');
-    let lastFocused   = null;
+    let lastFocused = null;
 
-    function focusableEls() { return modalCard.querySelectorAll('a[href], button:not([disabled])') }
+    function focusableEls() {
+      return Array.from(modal.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'))
+        .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
+    }
+
+    function setBackgroundInert(inert) {
+      bgLandmarks.forEach(el => {
+        try { el.inert = inert; } catch (_) {}
+        if (inert) el.setAttribute('inert', '');
+        else el.removeAttribute('inert');
+      });
+    }
 
     function openModal(e) {
       lastFocused = e.currentTarget;
       modal.classList.add('show');
       modal.setAttribute('aria-hidden', 'false');
       document.body.classList.add('modal-open');
-      bgLandmarks.forEach(el => el.setAttribute('inert', ''));
-      modalCard.focus();
+      setBackgroundInert(true);
+      const els = focusableEls();
+      (els[0] || modalCard).focus();
       document.addEventListener('keydown', trapFocus);
     }
 
     function closeModal() {
+      if (!modal.classList.contains('show')) return;
       modal.classList.remove('show');
       modal.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('modal-open');
-      bgLandmarks.forEach(el => el.removeAttribute('inert'));
+      setBackgroundInert(false);
       document.removeEventListener('keydown', trapFocus);
-      if (lastFocused) lastFocused.focus();
+      if (lastFocused && document.contains(lastFocused) && !lastFocused.disabled) lastFocused.focus();
     }
 
     function trapFocus(e) {
-      if (e.key === 'Escape') { closeModal(); return }
+      if (e.key === 'Escape') { closeModal(); return; }
       if (e.key !== 'Tab') return;
-      const els   = Array.from(focusableEls());
-      if (!els.length) return;
+      const els = focusableEls();
+      if (!els.length) { e.preventDefault(); modalCard.focus(); return; }
       const first = els[0], last = els[els.length - 1];
-      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
-      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+      if (e.shiftKey && (document.activeElement === first || document.activeElement === modalCard)) {
+        e.preventDefault(); last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault(); first.focus();
+      }
     }
 
     openBtns.forEach(btn => btn.addEventListener('click', openModal));
-    closeBtns.forEach(btn => {
-      const isLink = btn.tagName === 'A';
-      btn.addEventListener('click', isLink ? () => setTimeout(closeModal, 60) : closeModal);
-    });
-    modal.addEventListener('click', e => { if (e.target === modal) closeModal() });
+    closeBtns.forEach(btn => btn.addEventListener('click', closeModal));
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 
     // ── Toast ──────────────────────────────────────────────────────────────
     const toastEl = document.getElementById('toast');
@@ -1151,32 +979,47 @@
     }
 
     // ── Copy email ─────────────────────────────────────────────────────────
-    document.getElementById('copyEmailBtn').addEventListener('click', async () => {
+    async function copyText(text, successMessage, fallbackMessage) {
       try {
-        await navigator.clipboard.writeText('hr.marche01@gmail.com');
-        showToast('✓ Email address copied!');
-      } catch {
-        showToast('hr.marche01@gmail.com — copy it manually.');
-      }
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(text);
+          showToast(successMessage);
+          return true;
+        }
+      } catch (_) {}
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        const ok = document.execCommand('copy');
+        ta.remove();
+        if (ok) { showToast(successMessage); return true; }
+      } catch (_) {}
+      showToast(fallbackMessage);
+      return false;
+    }
+
+    document.getElementById('copyEmailBtn').addEventListener('click', () => {
+      copyText('hr.marche01@gmail.com', '✓ Email address copied!', 'hr.marche01@gmail.com — copy it manually.');
     });
 
     // ── Share ──────────────────────────────────────────────────────────────
     document.getElementById('shareBtn').addEventListener('click', async () => {
       const data = {
-        title: 'LYSPIRE PH | Hiring Repacker / Warehouse Staff',
-        text:  'LYSPIRE PH is hiring Repacker / Warehouse Staff in Carmona, Cavite. Limited slots!',
+        title: 'LYSPIRE PH | Urgent One-Day Hiring Event',
+        text:  'LYSPIRE PH Warehouse Staff hiring event on September 23, 2026 at 11:00 AM in Carmona, Cavite. Only 50 slots. Walk-in applicants only!',
         url:   location.href
       };
-      if (navigator.share && navigator.canShare && navigator.canShare(data)) {
-        try { await navigator.share(data) } catch {}
-      } else {
-        try {
-          await navigator.clipboard.writeText(location.href);
-          showToast('✓ Link copied — share it anywhere!');
-        } catch {
-          showToast('Copy the page URL to share this job.');
+      if (typeof navigator.share === 'function') {
+        try { await navigator.share(data); return; } catch (err) {
+          if (err && err.name === 'AbortError') return;
         }
       }
+      await copyText(location.href, '✓ Link copied — share it anywhere!', 'Copy the page URL to share this job.');
     });
 
     // ── FAQ accordion ──────────────────────────────────────────────────────
@@ -1203,7 +1046,7 @@
     }
 
     // ── Active nav highlighting ────────────────────────────────────────────
-    const sections = Array.from(document.querySelectorAll('section[id]'));
+    const sections = Array.from(document.querySelectorAll('section[id], article[id]'));
     const navLinks = document.querySelectorAll('.nav-links a[data-nav]');
     function updateNav() {
       let active = '';
@@ -1251,13 +1094,13 @@
     themeToggle.addEventListener('click', () => {
       const next = htmlEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       htmlEl.setAttribute('data-theme', next);
-      localStorage.setItem('lyspire_theme', next);
+      try { localStorage.setItem('lyspire_theme', next); } catch (_) {}
       syncThemeIcon();
     });
     syncThemeIcon(); // set icon on page load
 
-    // ── NEW: Requirements tracker ──────────────────────────────────────────
-    const TRACKER_KEY   = 'lyspire_reqs_v1';
+    // ── Job fair checklist ─────────────────────────────────────────────────
+    const TRACKER_KEY   = 'lyspire_jobfair_checklist_v1';
     const reqCheckboxes = document.querySelectorAll('.req-checkbox');
     const trackerCard   = document.getElementById('trackerCard');
     const trackerFill   = document.getElementById('trackerFill');
@@ -1266,38 +1109,30 @@
     const trackerBar    = document.getElementById('trackerBar');
     const trackerNote   = document.getElementById('trackerNote');
     const NOTES = [
-      'Start by gathering your government IDs — SSS, PAG-IBIG, PhilHealth, and TIN.',
-      '1 down! Government IDs take the longest — keep going.',
-      'Halfway through the IDs. Medical clearance is usually next.',
-      'Great progress! Consider getting your clearance while waiting for other documents.',
-      'Almost done — just one more requirement to go.',
-      '🎉 All requirements complete! You are ready to apply.'
+      'Start with your updated resume.',
+      'Good — keep reviewing the event details.',
+      'Halfway there. Recheck the date and time.',
+      'Almost ready. Recheck the venue.',
+      '🎉 Checklist complete. You have reviewed the key event details.'
     ];
-
     function updateTracker() {
-      const total   = reqCheckboxes.length;
+      const total = reqCheckboxes.length;
       const checked = Array.from(reqCheckboxes).filter(cb => cb.checked).length;
-      const pct     = total > 0 ? Math.round(checked / total * 100) : 0;
-      trackerFill.style.width   = pct + '%';
-      trackerPct.textContent    = pct + '%';
-      trackerCount.textContent  = checked + ' / ' + total;
+      const pct = total > 0 ? Math.round(checked / total * 100) : 0;
+      trackerFill.style.width = pct + '%';
+      trackerPct.textContent = pct + '%';
+      trackerCount.textContent = checked + ' / ' + total;
       trackerBar.setAttribute('aria-valuenow', pct);
       trackerCard.classList.toggle('all-done', checked === total);
       trackerNote.textContent = NOTES[Math.min(checked, NOTES.length - 1)] || '';
-      // Persist to localStorage
       const state = {};
       reqCheckboxes.forEach(cb => { state[cb.dataset.req] = cb.checked });
       try { localStorage.setItem(TRACKER_KEY, JSON.stringify(state)) } catch {}
     }
-
     function loadTracker() {
-      try {
-        const saved = JSON.parse(localStorage.getItem(TRACKER_KEY) || '{}');
-        reqCheckboxes.forEach(cb => { cb.checked = !!saved[cb.dataset.req] });
-      } catch {}
+      try { const saved = JSON.parse(localStorage.getItem(TRACKER_KEY) || '{}'); reqCheckboxes.forEach(cb => { cb.checked = !!saved[cb.dataset.req] }); } catch {}
       updateTracker();
     }
-
     reqCheckboxes.forEach(cb => cb.addEventListener('change', updateTracker));
     document.getElementById('clearTracker').addEventListener('click', () => {
       reqCheckboxes.forEach(cb => { cb.checked = false });
@@ -1307,12 +1142,33 @@
     });
     loadTracker();
 
-    // ── NEW: Deadline countdown ────────────────────────────────────────────
+    // ── Hiring event countdown ──────────────────────────────────────────────
     (function () {
-      const deadline = new Date('2026-12-31T23:59:59+08:00'); // Philippine Time
-      const days     = Math.max(0, Math.ceil((deadline - Date.now()) / 86400000));
-      const el       = document.getElementById('daysLeft');
-      if (el) el.textContent = days;
+      const eventDate = new Date('2026-09-23T11:00:00+08:00');
+      const el = document.getElementById('eventCountdown');
+      const label = document.getElementById('eventCountdownLabel');
+      const cardTime = document.getElementById('eventCardTime');
+      function updateEventCountdown() {
+        const diff = eventDate.getTime() - Date.now();
+        if (!el || !label) return;
+        const eventEnd = new Date('2026-09-23T23:59:59+08:00').getTime();
+        if (diff > 0) {
+          const days = Math.floor(diff / 86400000);
+          const hours = Math.floor((diff % 86400000) / 3600000);
+          const mins = Math.floor((diff % 3600000) / 60000);
+          el.textContent = days > 0 ? `${days}d ${hours}h` : `${hours}h ${mins}m`;
+          label.textContent = 'until the hiring event';
+        } else if (Date.now() <= eventEnd) {
+          el.textContent = 'LIVE';
+          label.textContent = 'hiring event day';
+        } else {
+          el.textContent = 'ENDED';
+          label.textContent = 'hiring event completed';
+        }
+      }
+      if (cardTime) cardTime.textContent = '11:00';
+      updateEventCountdown();
+      setInterval(updateEventCountdown, 30000);
     })();
 
     // ── NEW: Scroll reveal (IntersectionObserver) ──────────────────────────
